@@ -1,0 +1,16 @@
+.styleMenu{$menuId}, .styleMenu{$menuId}:visited {ldelim}
+  font-family      : {$ms.menu_font};
+  color            : {$ms.menu_rollout};
+  background-color : {$ms.bk_rollout};
+  font-weight      : {$ms.fw_rollout};
+  font-size        : {$ms.fz_rollout}pt;
+{rdelim}
+
+.styleMenu{$menuId}:hover {ldelim}
+  font-family      : {$ms.menu_font};
+  color            : {$ms.menu_rollover};
+  background-color : {$ms.bk_rollover};
+  font-weight      : {$ms.fw_rollover};
+  font-size        : {$ms.fz_rollover}pt;
+{rdelim}
+

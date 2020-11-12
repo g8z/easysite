@@ -1,0 +1,24 @@
+.menu{$menuId}{$menu_level}On {ldelim}
+  font-family    : {$ms.menu_font};
+  color          : {$ms.menu_rollout};
+  font-weight    : {$ms.fw_rollout};
+  text-align     : {$ms.align_rollout};
+  font-size      : {$ms.fz_rollout}pt;
+  padding-top    : {$ms.menu_pt}px;
+  padding-left   : {$ms.menu_pl}px;
+  padding-bottom : {$ms.menu_pb}px;
+  padding-right  : {$ms.menu_pr}px;
+{rdelim}
+
+.menu{$menuId}{$menu_level}Over {ldelim}
+  font-family    : {$ms.menu_font};
+  color          : {$ms.menu_rollover};
+  font-weight    : {$ms.fw_rollover};
+  text-align     : {$ms.align_rollover};
+  font-size      : {$ms.fz_rollover}pt;
+  padding-top    : {$ms.menu_pt}px;
+  padding-left   : {$ms.menu_pl}px;
+  padding-bottom : {$ms.menu_pb}px;
+  padding-right  : {$ms.menu_pr}px;
+{rdelim}
+

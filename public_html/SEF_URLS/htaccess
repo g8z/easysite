@@ -1,0 +1,19 @@
+RewriteEngine on
+
+# Replace with site url prefix
+RewriteBase /
+
+# Translates {page-title}.html to index.php?page_sef_title={page-title}
+RewriteRule ^pages/([^/]+)\.html$ index.php?page_sef_title=$1			[QSA]
+
+# Translates {form-title}.html to getForm.php?form_sef_title={form-title}
+RewriteRule ^forms/([^/]+)\.html$ getForm.php?form_sef_title=$1			[QSA]
+
+# Translates {report-title}.html to viewReport.php?report_sef_title={report-title}
+RewriteRule ^reports/([^/]+)\.html$ viewReport.php?report_sef_title=$1		[QSA]
+
+# Translates modules/{$module_key}/index.html to modules/{$module_key}/index.php
+RewriteRule ^modules/([^/]+)/index.html$ modules/$1/index.php			[QSA]
+
+# Translates modules/{$module_key}/{category-title}.html to modules/{$module_key}/index.php?category_seF_title={category-title}
+RewriteRule ^modules/([^/]+)/([^/]+).html$ modules/$1/index.php?category_sef_title=$2	[QSA]
